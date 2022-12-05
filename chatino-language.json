@@ -1,0 +1,372 @@
+{
+  "metadata": {
+    "codes": {
+      "iso639-3": "czn",
+      "glottolog": "zenz1235"
+    },
+    "names": {
+      "en": "Zenzontepec Chatino",
+      "es": "Chatino de Zenzontepec"
+    },
+    "notes": [
+      "This is a Digital Linguistics (DLx) Language description for Chatino."
+    ]
+  },
+  "alphabet": [
+    {
+      "local": "ä́",
+      "IPA": "ã́",
+      "PDLMA": "a!&",
+      "practical": "ą́"
+    },
+    {
+      "local": "á",
+      "IPA": "á",
+      "PDLMA": "a!",
+      "practical": "á"
+    },
+    {
+      "local": "a",
+      "IPA": "a",
+      "PDLMA": "a",
+      "practical": "a"
+    },
+    {
+      "local": "a̱",
+      "IPA": "ā",
+      "PDLMA": "a_",
+      "practical": "ā"
+    },
+    {
+      "local": "ä",
+      "IPA": "ã",
+      "PDLMA": "a&",
+      "practical": "ą"
+    },
+    {
+      "local": "ä̱",
+      "IPA": "ã̄",
+      "PDLMA": "a_&",
+      "practical": "ą̄"
+    },
+    {
+      "local": "a",
+      "IPA": "a",
+      "PDLMA": "a",
+      "practical": "a"
+    },
+    {
+      "local": "b",
+      "IPA": "b",
+      "PDLMA": "b",
+      "practical": "b"
+    },
+    {
+      "local": "ch",
+      "IPA": "t͡ʃ",
+      "PDLMA": "ch",
+      "practical": "ch"
+    },
+    {
+      "local": "e",
+      "IPA": "e",
+      "PDLMA": "e",
+      "practical": "e"
+    },
+    {
+      "local": "ë́",
+      "IPA": "ẽ́",
+      "PDLMA": "e!&",
+      "practical": "ę́"
+    },
+    {
+      "local": "e̱",
+      "IPA": "ē",
+      "PDLMA": "e_",
+      "practical": "ē"
+    },
+    {
+      "local": "é",
+      "IPA": "é",
+      "PDLMA": "e!",
+      "practical": "é"
+    },
+    {
+      "local": "ë",
+      "IPA": "ẽ",
+      "PDLMA": "e&",
+      "practical": "ę"
+    },
+    {
+      "local": "ë̱",
+      "IPA": "ẽ̄",
+      "PDLMA": "e_&",
+      "practical": "ę̄"
+    },
+    {
+      "local": "e",
+      "IPA": "e",
+      "PDLMA": "e",
+      "practical": "e"
+    },
+    {
+      "local": "i̱",
+      "IPA": "ī",
+      "PDLMA": "i_",
+      "practical": "ī"
+    },
+    {
+      "local": "ï",
+      "IPA": "ĩ",
+      "PDLMA": "i&",
+      "practical": "į"
+    },
+    {
+      "local": "i",
+      "IPA": "i",
+      "PDLMA": "i",
+      "practical": "i"
+    },
+    {
+      "local": "í",
+      "IPA": "í",
+      "PDLMA": "i!",
+      "practical": "í"
+    },
+    {
+      "local": "ï̱",
+      "IPA": "ĩ̄",
+      "PDLMA": "i_&",
+      "practical": "į̄"
+    },
+    {
+      "local": "ḯ",
+      "IPA": "ĩ́",
+      "PDLMA": "i!&",
+      "practical": "į́"
+    },
+    {
+      "local": "i",
+      "IPA": "i",
+      "PDLMA": "i",
+      "practical": "i"
+    },
+    {
+      "local": "j",
+      "IPA": "h",
+      "PDLMA": "j",
+      "practical": "j"
+    },
+    {
+      "local": "k",
+      "IPA": "k",
+      "PDLMA": "k",
+      "practical": "k"
+    },
+    {
+      "local": "ky",
+      "IPA": "kʲ",
+      "PDLMA": "ky",
+      "practical": "ky"
+    },
+    {
+      "local": "l",
+      "IPA": "l",
+      "PDLMA": "l",
+      "practical": "l"
+    },
+    {
+      "local": "ly",
+      "IPA": "lʲ",
+      "PDLMA": "ly",
+      "practical": "ly"
+    },
+    {
+      "local": "m",
+      "IPA": "m",
+      "PDLMA": "m",
+      "practical": "m"
+    },
+    {
+      "local": "n",
+      "IPA": "n",
+      "PDLMA": "n",
+      "practical": "n"
+    },
+    {
+      "local": "ny",
+      "IPA": "nʲ",
+      "PDLMA": "ny",
+      "practical": "ny"
+    },
+    {
+      "local": "ó",
+      "IPA": "ó",
+      "PDLMA": "o!",
+      "practical": "ó"
+    },
+    {
+      "local": "o",
+      "IPA": "o",
+      "PDLMA": "o",
+      "practical": "o"
+    },
+    {
+      "local": "o",
+      "IPA": "o",
+      "PDLMA": "o",
+      "practical": "o"
+    },
+    {
+      "local": "ö",
+      "IPA": "õ",
+      "PDLMA": "o&",
+      "practical": "ǫ"
+    },
+    {
+      "local": "ö̱",
+      "IPA": "ȭ",
+      "PDLMA": "o_&",
+      "practical": "ǭ"
+    },
+    {
+      "local": "ö́",
+      "IPA": "ṍ",
+      "PDLMA": "o!&",
+      "practical": "ǫ́"
+    },
+    {
+      "local": "o̱",
+      "IPA": "ō",
+      "PDLMA": "o_",
+      "practical": "ō"
+    },
+    {
+      "local": "p",
+      "IPA": "p",
+      "PDLMA": "p",
+      "practical": "p"
+    },
+    {
+      "local": "r",
+      "IPA": "ɾ",
+      "PDLMA": "r",
+      "practical": "r"
+    },
+    {
+      "local": "s",
+      "IPA": "s",
+      "PDLMA": "s",
+      "practical": "s"
+    },
+    {
+      "local": "t",
+      "IPA": "t",
+      "PDLMA": "t",
+      "practical": "t"
+    },
+    {
+      "local": "ty",
+      "IPA": "tʲ",
+      "PDLMA": "ty",
+      "practical": "ty"
+    },
+    {
+      "local": "ts",
+      "IPA": "t͡s",
+      "PDLMA": "ts",
+      "practical": "tz"
+    },
+    {
+      "local": "u",
+      "IPA": "u",
+      "PDLMA": "u",
+      "practical": "u"
+    },
+    {
+      "local": "ü̱",
+      "IPA": "ũ̄",
+      "PDLMA": "u_&",
+      "practical": "ų̄"
+    },
+    {
+      "local": "ü",
+      "IPA": "ũ",
+      "PDLMA": "u&",
+      "practical": "ų"
+    },
+    {
+      "local": "u̱",
+      "IPA": "ū",
+      "PDLMA": "u_",
+      "practical": "ū"
+    },
+    {
+      "local": "ú",
+      "IPA": "ú",
+      "PDLMA": "u!",
+      "practical": "ú"
+    },
+    {
+      "local": "u",
+      "IPA": "u",
+      "PDLMA": "u",
+      "practical": "u"
+    },
+    {
+      "local": "ǘ",
+      "IPA": "ṹ",
+      "PDLMA": "u!&",
+      "practical": "ų́"
+    },
+    {
+      "local": "sh",
+      "IPA": "ʃ",
+      "PDLMA": "sh",
+      "practical": "x"
+    },
+    {
+      "local": "y",
+      "IPA": "j",
+      "PDLMA": "y",
+      "practical": "y"
+    },
+    {
+      "local": "'",
+      "IPA": "ʔ",
+      "PDLMA": "7",
+      "practical": "ʔ"
+    },
+    {
+      "local": "u",
+      "IPA": "w",
+      "PDLMA": "w",
+      "practical": "w"
+    },
+    {
+      "local": "ku",
+      "IPA": "kʷ",
+      "PDLMA": "kw",
+      "practical": "kw"
+    },
+    {
+      "local": "",
+      "IPA": "=",
+      "PDLMA": " -",
+      "practical": "="
+    },
+    {
+      "local": "",
+      "IPA": "-",
+      "PDLMA": "-",
+      "practical": "-"
+    },
+    {
+      "local": "",
+      "IPA": "+",
+      "PDLMA": "=",
+      "practical": "+"
+    }
+  ],
+  "inventory": []
+}

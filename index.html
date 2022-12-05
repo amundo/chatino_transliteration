@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transliterate Chatino</title>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Gentium+Plus);
+
+* { 
+  font-family: 'Gentium Plus';
+}
+
+body {
+  display:flex;
+  flex-direction:column;
+  height:80vh;
+}
+
+header { 
+  display:flex;
+  border-bottom: 1px solid gray;
+  justify-content: center;
+  align-items:baseline;
+}
+
+header h1 { 
+  text-align:center;
+  font-size: 1rem;
+  flex:1;
+}
+
+header span { 
+  font-size: 1rem;
+  align-self:baseline;
+}
+
+main { 
+  display:flex;
+  height:100%;
+  min-height: 80vh;
+}
+
+section#editor {
+  flex: 1;
+  display:flex;
+}
+
+#editor > section#before, 
+#editor > section#after {
+  flex-direction:column;
+  flex: 1;
+  padding: 10px;
+  display:flex;
+}
+
+main > section textarea { 
+  padding: 1em;
+  flex: 1;
+  font-size: x-large;
+}
+
+table { 
+  border-collapse: collapse;
+  margin: 0 auto;
+  -moz-column-count: 3;
+}
+
+tbody tr:nth-child(odd) {
+   background-color: #efefef;
+}
+
+td { 
+  border: 1px solid #ddd;
+  text-align:center;
+}
+
+th { 
+  
+}
+
+</style>
+<script src=TableView.js></script>
+<script src=Language.js></script>
+</head>
+
+<body>
+<header>
+<h1>Chatino Transliteration</h1>
+<p>Last updated: <date datetime=2017-01-27>2017-01-27</date></span>
+</header>
+
+
+<main>
+<section id=orthography>
+</section>
+
+<section id=editor>
+
+  <section id=before>
+     <div>
+       <input checked name=from type=radio value=PDLMA     id=fromPDLMA>     <label for=fromPDLMA>PDLMA</label>       
+       <input         name=from type=radio value=practical id=fromPractical> <label for=fromPractical>Practical</label>          
+       <input         name=from type=radio value=local     id=fromLocal>       <label for=fromLocal>Local</label>  
+       <input         name=from type=radio value=IPA       id=fromIPA>       <label for=fromIPA>IPA</label> 
+     </div>
+    <textarea spellcheck=false></textarea>
+  </section>
+  
+  <section id=after>
+     <div>
+       <input         name=to type=radio value=PDLMA     id=toPDLMA>     <label for=toPDLMA>PDLMA</label>       
+       <input checked name=to type=radio value=practical id=toPractical> <label for=toPractical>Practical</label>          
+       <input         name=to type=radio value=local     id=toLocal>     <label for=toLocal>Local</label>  
+       <input         name=to type=radio value=IPA       id=toIPA>       <label for=toIPA>IPA</label>  
+     </div>
+    <textarea spellcheck=false></textarea>
+  </section>
+
+</section><!-- #editor -->
+
+</main>
+
+<script>
+var 
+  radios = [... document.querySelectorAll('#before input[type="radio"], #after input[type="radio"]')],
+  before = document.querySelector('#before textarea'),
+  after = document.querySelector('#after textarea'),
+  orthography = document.querySelector('#orthography'),
+  currentFrom = () => document.querySelector('#before input[name="from"]:checked').value,
+  currentTo   = () => document.querySelector('#after input[name="to"]:checked').value;
+
+var transliterate = () => {
+console.log(`transliterate`);
+  var 
+    untransliterated = before.value,
+    transliterated = chatino.transliterate(currentFrom(), currentTo(), untransliterated)
+  
+  after.value = transliterated;
+}
+
+var renderTable = () => {
+  var tv = new TableView(chatino.alphabet);
+  orthography.innerHTML = '';
+  orthography.appendChild(tv.render())
+}
+
+var listen = () => {
+  before.addEventListener('keyup', transliterate);
+  radios.forEach(radio => {
+    radio.addEventListener('change', transliterate) 
+  })
+}
+
+fetch('chatino-language.json')
+  .then(r => r.json())
+  .then(language => window.chatino = new Language(language))
+  .then(renderTable)
+  .then(listen)
+</script>
+
+</body>
+</html>

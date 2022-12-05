@@ -1,0 +1,61 @@
+orth		
+IPA
+
+7	=	ʔ
+!	=	high tone
+_	=	mid tone
+&	=	vowel nasality
+
+
+y	
+j
+
+
+ty	
+tʲ
+
+ly	
+lʲ
+
+ny	
+nʲ
+
+ky	
+kʲ
+
+kw	
+kʷ
+
+tz	
+ts
+
+ch	
+tʃ
+
+x	
+ʃ
+
+j	
+h
+
+
+~~~~~~~~~~~~~~~~~~~~
+
+String rewriting that I typically do with global find-and-replace, for linguistic writing. I then add morpheme boundaries as I go.
+
+7 	→ 	ʔ
+
+a!&	→	ą́
+e!&	→	ę́
+i!&	→	į́
+o!&	→	ǫ́
+u!&	→	ų́
+
+a_&	→	ą̄
+e_&	→	ę̄
+i_&	→	į̄
+o_&	→	ǭ
+u_&	→	ų̄
+
+The symbols above should be Unicode. In this version, the vowel characters and tone marks (acute accents and macrons) are single characters, and the ogonek is a combining diacritic. Change this if necessary.
+
